@@ -6,7 +6,7 @@ local state = {
 }
 
 function M.setup(opts)
-  local config = require 'cheatsheet.config'
+  local config = require 'config'
   config.setup(opts)
 
   vim.api.nvim_create_user_command('Cheatsheet', function() M.toggle() end, {
@@ -23,8 +23,8 @@ function M.toggle()
 end
 
 function M.open()
-  local ui = require 'cheatsheet.ui'
-  local keymaps = require 'cheatsheet.keymaps'
+  local ui = require 'ui'
+  local keymaps = require 'keymaps'
   local grouped_keymaps = keymaps.extract()
   state.buf, state.win = ui.create_window(grouped_keymaps)
 end

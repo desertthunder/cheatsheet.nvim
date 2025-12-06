@@ -1,7 +1,7 @@
 local M = {}
 
 function M.create_window(grouped_keymaps)
-  local config = require('cheatsheet.config').get()
+  local config = require('config').get()
   local buf = M.create_buffer()
   local win = M.open_floating_window(buf, config.window)
 

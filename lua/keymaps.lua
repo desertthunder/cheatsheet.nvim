@@ -1,7 +1,7 @@
 local M = {}
 
 function M.extract()
-  local config = require('cheatsheet.config').get()
+  local config = require('config').get()
   local modes = { 'n', 'v', 'i', 't' }
   local all_keymaps = {}
 
