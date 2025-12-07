@@ -23,7 +23,7 @@ Inside the cheatsheet window:
 
 ## Configuration
 
-Edit `lua/plugins/cheatsheet.lua` to customize:
+Edit `lua/plugins/cheatsheet.lua` to customize (or wherever you store your configuration):
 
 ```lua
 cheatsheet.setup({
@@ -97,7 +97,7 @@ Close the cheatsheet window.
 require('cheatsheet').close()
 ```
 
-### Keymaps Module (`require('cheatsheet.keymaps')`)
+### Keymaps Module (`require('keymaps')`)
 
 #### `extract()`
 
@@ -105,7 +105,7 @@ Extract and organize all keymaps.
 
 Returns: `table` - Array of `{ category, keymaps }` groups
 
-### UI Module (`require('cheatsheet.ui')`)
+### UI Module (`require('ui')`)
 
 #### `create_window(grouped_keymaps)`
 
